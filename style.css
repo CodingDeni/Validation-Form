@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: rgb(36, 41, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color:rgb(47, 54, 68);
+    border: 2px solid rgb(65, 70, 95);
+    border-radius: 7px;
+    max-width: 100%;
+    width: 400px; 
+    overflow: hidden;  
+}
+
+
+.formulario__titulo {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(137, 147, 183);
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.formulario {
+    padding: 0px 40px 30px;
+}
+
+.formulario__grupo{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(137, 147, 183);
+    margin-bottom: 3px;
+}
+
+.formulario input{
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: .2s ease all;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.formulario__grupo input:focus {
+    outline: 0;
+    border-color:  rgb(137, 147, 183);
+}
+
+.formulario__grupo.error input{
+    border-color: #DC5A5A;
+}
+
+.formulario__grupo.success input {
+    border-color: #60BD64;
+}
+
+.formulario__grupo img {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.formulario__grupo small {
+    color: #DC5A5A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.formulario__grupo.error small{
+    visibility: visible;
+}
+
+.formulario__grupo.error .formulario__input-error{
+    visibility: visible;
+}
+
+.formulario__grupo.success .formulario__input-valido{
+    visibility: visible;
+}
+
+
+.formulario button {
+	background-color: #6466AE;
+	border: 2px solid black;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 7px;
+	margin-top: 20px;
+	width: 100%;
+}
